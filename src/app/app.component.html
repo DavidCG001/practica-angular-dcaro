@@ -1,26 +1,5 @@
-<!-- HEADER -->
-<header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" routerLink="/">Angular API App</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" routerLink="/">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/busqueda">Búsqueda</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/acerca-de">Acerca de</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-</header>
-
+<app-header></app-header>
 <main class="container mt-4">
     <router-outlet></router-outlet>
 </main>
-
-<footer class="bg-dark text-white text-center py-3 mt-4">
-    <p>&copy; 2025 Angular API App</p>
-</footer>
+<app-footer></app-footer>
