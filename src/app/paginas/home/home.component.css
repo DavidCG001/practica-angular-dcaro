@@ -1,0 +1,60 @@
+/* home.component.css */
+
+/* Fondo de la página */
+.cont {
+    background-image: url('/img/home_bg.webp'); /* Cambia la URL por la imagen que desees */
+    background-size: cover;  /* Ajusta el fondo a la pantalla */
+    background-position: center center;  /* Centra la imagen de fondo */
+    background-attachment: fixed;  /* Fija el fondo al desplazarse */
+    height: 74vh;
+    width: 100%;  /* Asegura que la imagen ocupe toda la altura de la ventana */
+    color: white;  /* Cambia el color del texto a blanco para que sea legible sobre el fondo oscuro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centra el contenido verticalmente */
+  }
+  
+  .text-center img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Estilo para los títulos */
+h1 {
+    font-family: 'Roboto Slab', serif;  /* Aplica la fuente Roboto Slab para los títulos */
+    font-size: 4rem;  /* Tamaño grande para el título principal */
+    font-weight: 700;  /* Peso de fuente negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto para hacerlo más legible sobre fondos complejos */
+    color: #FFD700; /* Color dorado para el título */
+  }
+  
+  /* Subtítulos y párrafos */
+  p, .lead {
+    font-size: 1.2rem;  /* Tamaño de fuente legible */
+    font-weight: 400;  /* Peso de fuente regular */
+    line-height: 1.6;  /* Mejora la legibilidad */
+    margin-bottom: 20px;
+    color: #ffffff; /* Mantiene el texto en blanco */
+  }
+  
+  /* Botón de llamada a la acción */
+  .btn {
+    font-size: 1rem;  /* Tamaño de fuente para los botones */
+    font-weight: 700;  /* Botones con texto en negrita */
+    padding: 15px 30px;  /* Aumenta el tamaño de los botones */
+    border-radius: 50px;  /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Efecto de transición */
+  }
+  
+  .btn:hover {
+    background-color: #007BFF;  /* Cambia el color de fondo del botón al pasar el cursor */
+    transform: translateY(-5px);  /* Efecto de elevación al pasar el cursor */
+  }
+  
+  /* Imagen del logo */
+  .text-center img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;  /* Hace que la imagen del logo tenga bordes redondeados */
+  }
+  
