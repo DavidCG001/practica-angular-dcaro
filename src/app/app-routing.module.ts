@@ -7,7 +7,7 @@ import { HomeComponent } from './paginas/home/home.component';
 import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagina-no-encontrada.component';
 
 const routes: Routes = [
-  {path: 'home', component:HomeComponent},
+  {path: '', component:HomeComponent},
   {path: 'documentacion', component:DocumentacionComponent},
   {path: 'busqueda', component:BusquedaComponent},
   {path: 'acerca-de', component:AcercaDeComponent},

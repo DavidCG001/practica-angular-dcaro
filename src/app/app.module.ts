@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
+
+import { FormsModule } from '@angular/forms';
 import { AcercaDeComponent } from './paginas/acerca-de/acerca-de.component';
 import { BusquedaComponent } from './paginas/busqueda/busqueda.component';
 import { DocumentacionComponent } from './paginas/documentacion/documentacion.component';
@@ -20,11 +23,14 @@ import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagi
     DocumentacionComponent,
     AcercaDeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
