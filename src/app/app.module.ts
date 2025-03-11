@@ -13,6 +13,7 @@ import { BusquedaComponent } from './paginas/busqueda/busqueda.component';
 import { DocumentacionComponent } from './paginas/documentacion/documentacion.component';
 import { HomeComponent } from './paginas/home/home.component';
 import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagina-no-encontrada.component';
+import { ColorRarezaPipe } from './pipes/color-rareza.pipe';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagi
     AcercaDeComponent,
     HeaderComponent,
     FooterComponent,
+    ColorRarezaPipe,
 
   ],
   imports: [

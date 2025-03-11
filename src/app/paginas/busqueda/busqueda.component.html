@@ -37,7 +37,14 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold text-primary">{{ arma.name }}</h5>
                 <p class="badge bg-secondary text-light px-3 py-2">{{ arma.type }}</p>
-                <p class="text-muted">Rareza: <span class="fw-bold">{{ arma.rarity }}</span></p>
+
+                <!-- PIPE APLICADA -->
+                <p class="text-muted">
+                  Rareza: 
+                  <span class="fw-bold" [ngStyle]="{ 'color': arma.rarity | colorRareza }">
+                    {{ arma.rarity }}
+                  </span>
+                </p>
                 <p class="text-dark">⚔️ Ataque: <span class="fw-bold">{{ arma.attack.display }}</span></p>
               </div>
             </div>
