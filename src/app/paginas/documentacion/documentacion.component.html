@@ -1,1 +1,105 @@
-<p>documentacion works!</p>
+<div class="container mt-5">
+    <header class="text-center mb-5">
+        <h1 class="display-4">Documentación de la API</h1>
+        <p class="lead">
+            Guía para acceder y utilizar la API de Monster Hunter World.
+        </p>
+    </header>
+
+    <section>
+        <h3>¿Cómo acceder a la API?</h3>
+        <p>
+            Para acceder a la base de datos de Monster Hunter World, utilizamos una
+            API REST que ofrece una gran variedad de datos sobre armas, armaduras,
+            monstruos y más. Aquí te explicamos cómo hacer peticiones para obtener la
+            información que necesitas.
+        </p>
+    </section>
+
+    <section>
+        <h3>Endpoints Disponibles</h3>
+        <ul>
+            <li>
+                <strong>Armaduras:</strong> <code>/armor</code><br />
+                Obtén información sobre las armaduras disponibles en Monster Hunter
+                World. Puedes buscar armaduras por tipo, rango o nombre.
+            </li>
+            <li>
+                <strong>Armas:</strong> <code>/weapons</code><br />
+                Accede a información detallada sobre las armas, incluyendo el nombre,
+                tipo, ataques, y otros atributos.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Cómo Realizar una Petición</h3>
+        <p>
+            Para hacer una solicitud, puedes usar herramientas como
+            <strong>Postman</strong>, o realizar peticiones HTTP directamente en tu
+            código.
+        </p>
+        <h4>Ejemplo de Petición:</h4>
+        <pre>
+  GET https://mhw-db.com/armor
+        </pre>
+        <p>
+            Este endpoint te devolverá una lista de todas las armaduras disponibles en
+            Monster Hunter World.
+        </p>
+
+        <h4>Filtrar Resultados:</h4>
+        <p>
+            Puedes añadir parámetros de búsqueda para filtrar los resultados, por
+            ejemplo:
+        </p>
+        <pre>
+  GET https://mhw-db.com/armor/leather
+        </pre>
+        <p>
+            Esto solo devolverá las armaduras de tipo "helmet". Puedes buscar por
+            cualquier tipo de armadura, arma o monstruo que desees.
+        </p>
+    </section>
+
+    <section>
+        <h3>Respuestas de la API</h3>
+        <p>
+            La API responde en formato JSON. A continuación te mostramos un ejemplo de
+            la respuesta cuando consultas las armaduras:
+        </p>
+        <img src="img/image.png" alt="">
+        <p>
+            En este ejemplo, la respuesta contiene información sobre la armadura, como
+            su nombre, tipo, defensa, rareza e imagen.
+        </p>
+    </section>
+
+    <section>
+        <h3>Errores Comunes</h3>
+        <p>Si recibes un error, esto es lo que puedes esperar:</p>
+        <ul>
+            <li>
+                <strong>400 - Bad Request:</strong> La petición no es válida. Revisa los
+                parámetros.
+            </li>
+            <li>
+                <strong>404 - Not Found:</strong> No se encontraron resultados para tu
+                búsqueda.
+            </li>
+            <li>
+                <strong>500 - Internal Server Error:</strong> Hubo un problema con el
+                servidor. Intenta más tarde.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>¿Dónde Encontrar Más Información?</h3>
+        <p>
+            Para obtener más detalles sobre la API, puedes consultar la documentación
+            oficial en el sitio web de la API de Monster Hunter World o explorar el
+            código fuente si está disponible públicamente.
+        </p>
+    </section>
+</div>
