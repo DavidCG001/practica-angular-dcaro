@@ -4,6 +4,7 @@ import { AcercaDeComponent } from './paginas/acerca-de/acerca-de.component';
 import { BusquedaComponent } from './paginas/busqueda/busqueda.component';
 import { DocumentacionComponent } from './paginas/documentacion/documentacion.component';
 import { HomeComponent } from './paginas/home/home.component';
+import { MonstruosListaComponent } from './paginas/monstruos-lista/monstruos-lista.component';
 import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagina-no-encontrada.component';
 
 const routes: Routes = [
@@ -11,7 +12,10 @@ const routes: Routes = [
   {path: 'documentacion', component:DocumentacionComponent},
   {path: 'busqueda', component:BusquedaComponent},
   {path: 'acerca-de', component:AcercaDeComponent},
-  {path: '**', component: PaginaNoEncontradaComponent}
+  {path: 'monstruos', component: MonstruosListaComponent },
+  {path: '**', component: PaginaNoEncontradaComponent},
+ 
+
 ];
 
 @NgModule({

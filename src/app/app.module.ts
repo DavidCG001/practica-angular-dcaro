@@ -12,6 +12,7 @@ import { AcercaDeComponent } from './paginas/acerca-de/acerca-de.component';
 import { BusquedaComponent } from './paginas/busqueda/busqueda.component';
 import { DocumentacionComponent } from './paginas/documentacion/documentacion.component';
 import { HomeComponent } from './paginas/home/home.component';
+import { MonstruosListaComponent } from './paginas/monstruos-lista/monstruos-lista.component';
 import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagina-no-encontrada.component';
 import { ColorRarezaPipe } from './pipes/color-rareza.pipe';
 
@@ -26,6 +27,7 @@ import { ColorRarezaPipe } from './pipes/color-rareza.pipe';
     HeaderComponent,
     FooterComponent,
     ColorRarezaPipe,
+    MonstruosListaComponent,
 
   ],
   imports: [

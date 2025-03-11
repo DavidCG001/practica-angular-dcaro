@@ -2,7 +2,7 @@
 
 /* Fondo de la página */
 .cont {
-    background-image: url('/img/home_bg.webp'); /* Cambia la URL por la imagen que desees */
+    background-image: url('/img/home_bg.jpg'); /* Cambia la URL por la imagen que desees */
     background-size: cover;  /* Ajusta el fondo a la pantalla */
     background-position: center center;  /* Centra la imagen de fondo */
     background-attachment: fixed;  /* Fija el fondo al desplazarse */

@@ -1,0 +1,75 @@
+<div class="container mt-4">
+  <!-- Formulario para crear un monstruo -->
+  <div class="card">
+    <div class="card-header">
+      <h3>Crear Monstruo</h3>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="crearMonstruo()">
+        <div class="mb-3">
+          <label for="nombreCrear" class="form-label">Nombre</label>
+          <input [(ngModel)]="monstruoCrear.nombre" name="nombre" id="nombreCrear" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="descriptionCrear" class="form-label">Descripción</label>
+          <input [(ngModel)]="monstruoCrear.description" name="description" id="descriptionCrear" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="cantidadCrear" class="form-label">Cantidad</label>
+          <input [(ngModel)]="monstruoCrear.cantidad" name="cantidad" id="cantidadCrear" class="form-control" type="number" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Crear</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Formulario para editar un monstruo -->
+  <div class="card mt-4" *ngIf="monstruoEditar.id">
+    <div class="card-header">
+      <h3>Editar Monstruo</h3>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="editarMonstruo()">
+        <div class="mb-3">
+          <label for="nombreEditar" class="form-label">Nombre</label>
+          <input [(ngModel)]="monstruoEditar.nombre" name="nombre" id="nombreEditar" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="descriptionEditar" class="form-label">Descripción</label>
+          <input [(ngModel)]="monstruoEditar.description" name="description" id="descriptionEditar" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="cantidadEditar" class="form-label">Cantidad</label>
+          <input [(ngModel)]="monstruoEditar.cantidad" name="cantidad" id="cantidadEditar" class="form-control" type="number" required />
+        </div>
+        <button type="submit" class="btn btn-warning">Actualizar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lista de monstruos -->
+  <div class="mt-4">
+    <h2>Mis Monstruos</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Cantidad</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let monstruo of monstruos">
+          <td>{{ monstruo.nombre }}</td>
+          <td>{{ monstruo.description }}</td>
+          <td>{{ monstruo.cantidad }}</td>
+          <td>
+            <button class="btn btn-warning" (click)="cargarMonstruoParaEdicion(monstruo)">Editar</button>
+            <button class="btn btn-danger" (click)="eliminarMonstruo(monstruo.id)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
